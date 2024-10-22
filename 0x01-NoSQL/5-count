@@ -1,0 +1,2 @@
+// task-5  display the number of document in a collection
+db.school.count()
