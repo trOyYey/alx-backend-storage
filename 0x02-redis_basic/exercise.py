@@ -1,3 +1,12 @@
+#!/usr/bin/env python3
+"""
+redis basics task exercise
+"""
+from typing import Union, Optional, Callable, Any
+import redis
+import uuid
+
+
 class Cache:
     """
     cache class.
