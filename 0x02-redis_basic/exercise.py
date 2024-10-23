@@ -21,7 +21,7 @@ def replay(method: Callable) -> None:
     outputs = client.lrange(f"{name}:outputs", 0, -1)
     print(f'{name} was called {len(inputs)} times:')
     for input, output in zip(inputs, outputs):
-        print(f"{name}(*{input.decode('utf-8'}) -> {output.decode('utf-8')}"
+        print(f"{name}(*{input.decode('utf-8'}) -> {output.decode('utf-8')}")
 
 def count_calls(method: Callable) -> Callable:
     """
